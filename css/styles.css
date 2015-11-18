@@ -3,7 +3,7 @@
 	height: 100vh;
 	border: 1px solid green;
 	padding: 3px;
-	margin: 15px 5px 15px 30px;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -71,6 +71,15 @@ input{
 	height: 95vh;
 	background-color: skyblue;
 	float: left;
+	text-align: center;
+}
+
+.chart-text{
+	margin-bottom: 5px;
+}
+
+img{
+	width: 95%;
 }
 
 #stock-prop{

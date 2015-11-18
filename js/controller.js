@@ -48,6 +48,7 @@ stocksApp.controller('stocksController', function ($scope, $http){
 				value: stockData[name]
 			})
 		}
+		getChart(stockData);
 		console.log($scope.dataList);
 	}
 
@@ -57,6 +58,12 @@ stocksApp.controller('stocksController', function ($scope, $http){
 		}else if(change.indexOf('-') > -1){
 			return 'change-negative';
 		}
+	}
+
+	function getChart(stockData){
+		console.log(stockData)
+		$scope.image1 = "http://chart.finance.yahoo.com/z?s="+stockData.symbol+"&t=3m&q=l&l=on&z=s&p=m10,m100";
+		$scope.image2 = "http://chart.finance.yahoo.com/z?s="+stockData.symbol+"&t=1ym&q=l&l=on&z=s&p=m50,m200";
 	}
 });
 
