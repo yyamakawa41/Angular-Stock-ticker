@@ -11,7 +11,7 @@
 </head>
 <body ng-controller="stocksController">
 
-	<div id-"wrapper">
+	<div id="wrapper">
 
 		<div id="left-all-stocks">
 			<form ng-submit="getStocks()">
@@ -21,9 +21,9 @@
 					<input type="text" ng-model="userStocks">
 				</div>
 			</form>
-			<div id="{{stock.Symbol}}" ng-click="loadStock(stock)" ng-repeat='stock in listOfStocks'>
+			<div class="left-stock-result" id="{{stock.Symbol}}" ng-click="loadStock(stock)" ng-repeat='stock in listOfStocks'>
 				<div class="company-name">{{stock.Name}}</div>
-				<div class="stock-change">{{stock.Change}}</div>
+				<div class="stock-change {{getChangeClass(stock.Change)}}">{{stock.Change}}</div>
 				<div class="stock-symbol">{{stock.Symbol}}</div>				
 			</div>
 		</div>
@@ -37,6 +37,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div id="chart-container">
+			<div class="chart-text">3 Month, 10d MA</div>
+				<img src="{{theChart}}">
+			<div class="chart-text">12 Month, 50d MA</div>
+				<img src="{{theChart2}}">
 		</div>
 	</div>
 

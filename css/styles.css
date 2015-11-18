@@ -4,6 +4,7 @@
 	border: 1px solid green;
 	padding: 3px;
 	margin: 15px 5px 15px 30px;
+	overflow: hidden;
 }
 
 #left-all-stocks{
@@ -11,4 +12,28 @@
 	height: 95vh;
 	background-color: #e0e0e0;
 	float: left;
+	
+}
+
+#get-stock-input{
+	text-align: center;
+}
+
+#stock-filter{
+	text-align: center;
+	font-size: 25px;
+}
+
+.left-stock-result{
+	margin: 20px;
+	border: 1px solid black;
+	padding: 8px;
+}
+
+.change-positve{
+	font-color: green;
+}
+
+.change-negative{
+	font-color: red;
 }
