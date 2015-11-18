@@ -1,6 +1,6 @@
 #wrapper{
 	width: 95%;
-	height: 95%;
+	height: 100vh;
 	border: 1px solid green;
 	padding: 3px;
 	margin: 15px 5px 15px 30px;
@@ -8,11 +8,29 @@
 }
 
 #left-all-stocks{
-	width: 33%;
+	width: 24%;
+	margin: 1%;
 	height: 95vh;
 	background-color: #e0e0e0;
-	float: left;
 	
+	float: left;	
+}
+
+#right-single-stock{
+	width: 45%;
+	margin: 1%;
+	height: 95vh;
+	background-color: lime;
+		float: left;
+	overflow-y: scroll;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+#get-stock-texts{
+	text-align: center;
 }
 
 #get-stock-input{
@@ -21,19 +39,45 @@
 
 #stock-filter{
 	text-align: center;
-	font-size: 25px;
+	font-size: 23px;
 }
 
 .left-stock-result{
 	margin: 20px;
-	border: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	background-color: white;
 	padding: 8px;
 }
 
-.change-positve{
-	font-color: green;
+.stock-change{
+	display: inline;
+	
+}
+
+.change-positive{
+	color: green;
+	border-bottom: 2px solid blue;
 }
 
 .change-negative{
-	font-color: red;
+	color: red;
+	border-bottom: 2px solid red;
+}
+
+#chart-container{
+	width: 24%;
+	margin: 1%;
+	height: 95vh;
+	background-color: skyblue;
+	float: left;
+}
+
+#stock-prop{
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	border-radius: 3px;
 }

@@ -15,7 +15,7 @@
 
 		<div id="left-all-stocks">
 			<form ng-submit="getStocks()">
-				<div id="get-stock-texts">What stocks yould you like to search for? Separate with a comma (i.e. goog, msft, yhoo);
+				<div id="get-stock-texts">What stocks yould you like to search for? Separate with a comma (i.e. goog, msft, yhoo)
 				</div>
 				<div id="get-stock-input">
 					<input type="text" ng-model="userStocks">
@@ -30,10 +30,9 @@
 		<div id="right-single-stock">
 			<div id="stock-filter">
 				Filter:<input type="text" ng-model='stockFilter'>
-				<div id="" ng-repeat="detail in dataList | filter:stockFilter">
+				<div id="stock-prop" ng-repeat="detail in dataList | filter:stockFilter">
 					<div class="stock-properties">
-						<div class="detail-prop">{{detail.prop}}</div>
-						<div class="prop-value">{{detail.value}}</div>
+						<div class="detail-prop">{{detail.prop}}: {{detail.value}}</div>
 					</div>
 				</div>
 			</div>
